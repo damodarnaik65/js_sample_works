@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 </head>
+
 <body>
         <script type="text/javascript">
-            function square()
-            {
-            var n=parseInt(prompt ("Enter the number for square root n:",""));
-            
-            if(isNaN(n)){
-                alert("Not a valid input");
-               square();
-            }
-            else{ 
-                    var res= 0;
-                    res = n * n;
-                    console.log("res67uv 758ugvv8j hc8",res);
-                    document.write(res);
-                 }
-            } 
-            square();
-            </script>
+                function square() {
+                        var n = 0;
+
+                        do {
+
+                                n = parseInt(prompt("Enter the number for square root n:", ""));
+                                if (isNaN(n)) {
+                                        alert("Not a valid input");
+                                }
+
+                        } while (isNaN(n));
+                        var res = 0;
+                        res = n * n;
+                        console.log("res67uv 758ugvv8j hc8", res);
+                        document.write(res);
+
+
+                }
+                square();
+        </script>
 
 </body>
+
 </html>
