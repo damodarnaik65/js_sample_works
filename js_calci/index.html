@@ -2,59 +2,36 @@
 <html>
 <head>
 <title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <div align="center">
 <body align="center">
-<form name="frm" style="padding: 20px; border: 1px solid black; width: 200px;">
-<input name="result" style="width:110px;text-align:right"><br />
-<input type="button" name="1" value="1" onClick="run(1)">
-<input type="button" name="2" value="2" onClick="run(2)">
-<input type="button" name="3" value="3" onClick="run(3)">
-<input type="button" name="plus" value="+" onClick="runplus()"><br/>
+<form name="frm" style="padding: 20px; border: 5px solid black; width: 200px;height:300px;background-color:brown">
+<input name="result" readonly="readonly"style="width:200px;height:50px;text-align:right;border:2px solid black;font-size:30px"><br />
 
-<input type="button" name="4" value="4" onClick="run(4)">
-<input type="button" name="5" value="5" onClick="run(5)">
-<input type="button" name="6" value="6" onClick="run(6)">
-<input type="button" name="minus" value="-" onClick="runminus()"><br/>
-
-<input type="button" name="7" value="7" onClick="run(7)">
-<input type="button" name="8" value="8" onClick="run(8)">
-<input type="button" name="9" value="9" onClick="run(9)">
-<input type="button" name="mult" value="*" onClick="runmult()"><br/>
-
-<input type="reset" name="clear" value="C">
-<input type="button" name="div" value="/" onClick="rundiv()">
-<input type="button" style="width:50px;"" name="calc" value="=" onClick="evalu()">
+<br>
+<input type="button" name="1" value="1" style="width:40px;height:35px" onClick="run(1)">
+<input type="button" name="2" value="2" style="width:40px;height:35px" onClick="run(2)">
+<input type="button" name="3" value="3" style="width:40px;height:35px"  onClick="run(3)">
+<input type="button" name="plus" value="+" style="width:40px;height:35px" onClick="runplus()"><br/>
+<br>
+<input type="button" name="4" value="4" style="width:40px;height:35px" onClick="run(4)">
+<input type="button" name="5" value="5" style="width:40px;height:35px" onClick="run(5)">
+<input type="button" name="6" value="6" style="width:40px;height:35px" onClick="run(6)">
+<input type="button" name="minus" value="-" style="width:40px;height:35px" onClick="runminus()"><br/>
+<br>
+<input type="button" name="7" value="7" style="width:40px;height:35px" onClick="run(7)">
+<input type="button" name="8" value="8" style="width:40px;height:35px" onClick="run(8)">
+<input type="button" name="9" value="9" style="width:40px;height:35px" onClick="run(9)">
+<input type="button" name="mult" value="*" style="width:40px;height:35px" onClick="runmult()"><br/>
+<br>
+<input type="button" name="0" value="0" style="width:40px;height:35px" onClick="run(0)">
+<input type="reset" name="clear" value="C" style="width:40px;height:35px">
+<input type="button" name="div" value="/" style="width:40px;height:35px" onClick="rundiv()">
+<input type="button" name="calc" value="=" style="width:40px;height:35px" onClick="evalu()">
 </form>
 </div>
-<script type="text/javascript">
-function run(num)
-{
-document.frm.result.value +=num;
-}
-
-function runplus()
-{
-document.frm.result.value += "+";
-}
-function runminus()
-{
-document.frm.result.value += "-";
-}
-function runmult()
-{
-document.frm.result.value += "*";
-}
-function rundiv()
-{
-document.frm.result.value += "/";
-}
-function evalu()
-{
-var evalo = eval(document.frm.result.value)
-document.frm.result.value = evalo;
-}
-</script>
+<script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>﻿
 
