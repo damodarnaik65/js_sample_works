@@ -2,33 +2,34 @@
 <html>
 <head>
 <title>Calculator</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
 </head>
 <div align="center">
-<body align="center">
-<form name="frm" style="padding: 20px; border: 5px solid black; width: 200px;height:300px;background-color:brown">
-<input name="result" readonly="readonly"style="width:200px;height:50px;text-align:right;border:2px solid black;font-size:30px"><br />
+<body>
+<form name="frm" >
+<input name="result" id="display" readonly="readonly"><br />
 
 <br>
-<input type="button" name="1" value="1" style="width:40px;height:35px" onClick="run(1)">
-<input type="button" name="2" value="2" style="width:40px;height:35px" onClick="run(2)">
-<input type="button" name="3" value="3" style="width:40px;height:35px"  onClick="run(3)">
-<input type="button" name="plus" value="+" style="width:40px;height:35px" onClick="runplus()"><br/>
+
+<input type="button" id="b1" name="1" value="1" onClick="run(1)">
+<input type="button" id="b2" name="2" value="2"  onClick="run(2)">
+<input type="button" id="b3" name="3" value="3" onClick="run(3)">
+<input type="button" id="b4" name="plus" value="+" onClick="runplus()"><br/>
 <br>
-<input type="button" name="4" value="4" style="width:40px;height:35px" onClick="run(4)">
-<input type="button" name="5" value="5" style="width:40px;height:35px" onClick="run(5)">
-<input type="button" name="6" value="6" style="width:40px;height:35px" onClick="run(6)">
-<input type="button" name="minus" value="-" style="width:40px;height:35px" onClick="runminus()"><br/>
+<input type="button" id="b5" name="4" value="4"  onClick="run(4)">
+<input type="button" id="b6" name="5" value="5" onClick="run(5)">
+<input type="button" id="b7" name="6" value="6"  onClick="run(6)">
+<input type="button" id="b8"name="minus" value="-" onClick="runminus()"><br/>
 <br>
-<input type="button" name="7" value="7" style="width:40px;height:35px" onClick="run(7)">
-<input type="button" name="8" value="8" style="width:40px;height:35px" onClick="run(8)">
-<input type="button" name="9" value="9" style="width:40px;height:35px" onClick="run(9)">
-<input type="button" name="mult" value="*" style="width:40px;height:35px" onClick="runmult()"><br/>
+<input type="button" id="b9" name="7" value="7"  onClick="run(7)">
+<input type="button" id="b10" name="8" value="8"  onClick="run(8)">
+<input type="button" id="b11" name="9" value="9"  onClick="run(9)">
+<input type="button" id="b12" name="mult" value="*"  onClick="runmult()"><br/>
 <br>
-<input type="button" name="0" value="0" style="width:40px;height:35px" onClick="run(0)">
-<input type="reset" name="clear" value="C" style="width:40px;height:35px">
-<input type="button" name="div" value="/" style="width:40px;height:35px" onClick="rundiv()">
-<input type="button" name="calc" value="=" style="width:40px;height:35px" onClick="evalu()">
+<input type="button" id="b13" name="0" value="0"  onClick="run(0)">
+<input type="reset"  id="b14" name="clear" value="C" >
+<input type="button" id="b15" name="div" value="/"  onClick="rundiv()">
+<input type="button" id="b16" name="calc" value="="  onClick="evalu()">
 </form>
 </div>
 <script type="text/javascript" src="script/script.js"></script>
