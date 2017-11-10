@@ -3,44 +3,59 @@
 <head>
 <title>Calculator</title>
 <link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
+
 <!--  For production
-<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
 -->
 <!--  For Development -->
-<link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/> 
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/> 
 </head>
 
 <div align="center">
 <body>
 <form name="frm" >
-<input name="result" id="display" readonly="readonly"><br />
+<div class="input-group input-group-lg">
+<!--<span class="input-group-addon" id="sizing-addon1">@</span>-->
+<input name="result" class="form-control" id="display" readonly="readonly" aria-describedby="sizing-addon1" >
+</div>
+<br />
+
 
 <br>
-
-<input type="button" id="b1" name="1" value="1" onClick="run(1)">
-<input type="button" id="b2" name="2" value="2"  onClick="run(2)">
-<input type="button" id="b3" name="3" value="3" onClick="run(3)">
-<input type="button" id="b4" name="plus" value="+" onClick="runplus()"><br/>
+<div class="btn-group">
+<input type="button" class="btn btn-primary" id="b1" name="1" value="1" onClick="run(1)">
+<input type="button" class="btn btn-primary" id="b2" name="2" value="2"  onClick="run(2)">
+<input type="button" class="btn btn-primary" id="b3" name="3" value="3" onClick="run(3)">
+<input type="button" class="btn btn-primary" id="b4" name="plus" value="+" onClick="runplus()"><br/>
+</div>
 <br>
-<input type="button" id="b5" name="4" value="4"  onClick="run(4)">
-<input type="button" id="b6" name="5" value="5" onClick="run(5)">
-<input type="button" id="b7" name="6" value="6"  onClick="run(6)">
-<input type="button" id="b8"name="minus" value="-" onClick="runminus()"><br/>
+<div class="btn-group">
+<input type="button" class="btn btn-primary" id="b5" name="4" value="4"  onClick="run(4)">
+<input type="button" class="btn btn-primary" id="b6" name="5" value="5" onClick="run(5)">
+<input type="button" class="btn btn-primary" id="b7" name="6" value="6"  onClick="run(6)">
+<input type="button" class="btn btn-primary" id="b8"name="minus" value="-" onClick="runminus()"><br/>
+</div>
 <br>
-<input type="button" id="b9" name="7" value="7"  onClick="run(7)">
-<input type="button" id="b10" name="8" value="8"  onClick="run(8)">
-<input type="button" id="b11" name="9" value="9"  onClick="run(9)">
-<input type="button" id="b12" name="mult" value="*"  onClick="runmult()"><br/>
+<div class="btn-group">
+<input type="button" class="btn btn-primary" id="b9" name="7" value="7"  onClick="run(7)">
+<input type="button" class="btn btn-primary" id="b10" name="8" value="8"  onClick="run(8)">
+<input type="button" class="btn btn-primary" id="b11" name="9" value="9"  onClick="run(9)">
+<input type="button" class="btn btn-primary" id="b12" name="mult" value="*"  onClick="runmult()"><br/>
+</div>
 <br>
-<input type="button" id="b13" name="0" value="0"  onClick="run(0)">
-<input type="reset"  id="b14" name="clear" value="C" >
-<input type="button" id="b15" name="div" value="/"  onClick="rundiv()">
-<input type="button" id="b16" name="calc" value="="  onClick="evalu()">
+<div class="btn-group">
+<input type="button" class="btn btn-primary" id="b13" name="0" value="0"  onClick="run(0)">
+<input type="reset"  class="btn btn-primary" id="b14" name="clear" value="C" >
+<input type="button" class="btn btn-primary" id="b15" name="div" value="/"  onClick="rundiv()">
+<input type="button" class="btn btn-primary" id="b16" name="calc" value="="  onClick="evalu()">
+</div>
 </form>
 </div>
 <script type="text/javascript" src="script/script.js"></script>
+<!-- For production 
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+-->
+<!-- For Development -->
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
 </body>
-</html>﻿
-
-
-
+</html>
