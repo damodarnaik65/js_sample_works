@@ -1,109 +1,26 @@
-
-body{
-    align-content: center;
+#output {
+    height: 45px;
+    background-color: black;
+    color: aqua;
+    width: 100%;
+    font-size: 2em;
+    padding: 5px;
+    text-align: right;
+    margin-bottom: 25px;
+    overflow: hidden;
 }
-
-form{
-    padding: 20px; 
-    border: 5px solid black;
-    width: 200px;
-    height:300px;
-    background-color:brown;
-
+     #mycalcu {
+    width: 350px;
+    background-color: dimgray;
+    height: 350px;
+    padding: 5px;
 }
-
-#display{
-    align-content:center;
-    width:160px;
-    height:50px;
-    text-align:right;
-    border:2px solid black;
-    font-size:30px;
+  .cbutton {
+    font-size: 2em;
+    width: 40px;
+    margin: 4px;
+    padding: 4px;
 }
-
-#b1{
-    width:40px;
-    height:35px;
-    background: burlywood;
-
+.container {
+    padding: 25px;
 }
-#b2{
-    width:40px;
-    height:35px;
-    background: burlywood;
-
-}
-#b3{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b4{
-    width:40px;
-    height:35px;
-    background: gold;
-}
-#b5{
-    width:40px;
-    height:35px;
-    background: burlywood;
-
-}
-#b6{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b7{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b8{
-    width:40px;
-    height:35px;
-    background: gold;
-}
-#b9{
-    width:40px;
-    height:35px;
-    background: burlywood;
-
-}
-#b10{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b11{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b12{
-    width:40px;
-    height:35px;
-    background: gold;
-}
-#b13{
-    width:40px;
-    height:35px;
-    background: burlywood;
-}
-#b14{
-    width:40px;
-    height:35px;
-    background: red;
-}
-#b15{
-    width:40px;
-    height:35px;
-    background: gold;
-}
-#b16{
-    width:40px;
-    height:35px;
-    background: blue;
-}
-
-
