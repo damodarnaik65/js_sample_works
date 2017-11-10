@@ -4,7 +4,11 @@
 <title>Calculator</title>
 <link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
 
-<link href="../node_modules/bootstrap-sass/assets/stylesheets/bootstrap" rel="stylesheet"/>
+<!--  For production
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+-->
+<!--  For Development -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/> 
 </head>
 <div align="center">
 <body>
@@ -35,8 +39,10 @@
 </form>
 </div>
 <script type="text/javascript" src="script/script.js"></script>
+<!-- For production 
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+-->
+<!-- For Development -->
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
 </body>
-</html>﻿
-
-
-
+</html>
