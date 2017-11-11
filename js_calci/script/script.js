@@ -1,31 +1,40 @@
+var exprArry = [];
 
-var 
-function run(num) {
-    document.getElementById("display").value += num;
-}
+function handleInput(event) {
+    var x = event.target.innerText;
+    if ($.isNumeric(x)) {
+        var lastelement = exprArry.pop();
+        if ($.isNumeric(lastelement)) {
+            x = parseInt(lastelement) * 10 + parseInt(x);
+        } else {
+            exprArry.push(lastelement);
+        }
+        exprArry.push(x);
 
-function runplus() {
-    document.getElementById("display").value += "+";
-}
+    } else {
+        if (x == "C") {
+            exprArry = [];
 
-function runminus() {
-    document.getElementById("display").value += "-";
-}
+        } else if (x == "=") {
+            try {
+                var result = eval(exprArry.join(""));
+                exprArry = [];
+                exprArry.push(result);
+            } catch (err) {
+                alert("Invalid input")
+            }
 
-function runmult() {
-    document.getElementById("display").value += "*";
-}
 
-function rundiv() {
-    document.getElementById("display").value += "/";
-}
+        } else {
+            var lastelement = exprArry.pop();
+            if ($.isNumeric(lastelement)) {
+                exprArry.push(lastelement);
+            }
 
-function evalu() {
-    var evalo = eval(document.getElementById("display").value)
-    document.getElementById("display").value = evalo;
-}
+            exprArry.push(x);
 
-function clearDisplayText() {
 
-    document.getElementById("display").value = " ";
+        }
+    }
+    document.getElementById("display").value = exprArry.join("");
 }
