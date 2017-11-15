@@ -1,9 +1,12 @@
+
 var exprArry = [];
 
 function handleInput(event) {
     var x = event.target.innerText;
-    if ($.isNumeric(x)) {
+   
+    if($.isNumeric(x)){
         var lastelement = exprArry.pop();
+      
         if ($.isNumeric(lastelement)) {
             x = parseInt(lastelement) * 10 + parseInt(x);
         } else {
@@ -12,8 +15,11 @@ function handleInput(event) {
         exprArry.push(x);
 
     } else {
-        if (x == "C") {
+        if (x == "CLEAR") {
             exprArry = [];
+
+        }else if(x=="DEL"){
+            exprArry.pop(x);
 
         } else if (x == "=") {
             try {

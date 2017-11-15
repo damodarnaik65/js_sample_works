@@ -2,6 +2,7 @@
 <html>
 
 <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
 
@@ -16,47 +17,57 @@
     <div class="container">
 
         <div class="row">
-            <input name="result" id="display" class="col form-control" id="display" readonly="readonly" aria-describedby="sizing-addon1">
-        </div>
-        <div class="row">
-            <button   class="col btn btn-primary" onClick="handleInput(event)">1</button>
-            <button   class="col btn btn-primary" onClick="handleInput(event)">2</button>
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">3</button>
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">+</button>
+            <input name="result" id="display" class="col form-control" readonly="readonly" aria-describedby="sizing-addon1">
         </div>
 
         <div class="row">
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">4</button>
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">5</button>
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">6</button>
-            <button   class="col  btn btn-primary" onClick="handleInput(event)">-</button>
+            <button class="col btn btn-primary" onClick="handleInput(event)">CLEAR</button>
+            <button class="col btn btn-primary" onclick="handleInput(event)">DEL</button>
+        </div>
+
+        <div class="row">
+            <button class="col btn btn-primary" onClick="handleInput(event)">1</button>
+            <button class="col btn btn-primary" onClick="handleInput(event)">2</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">3</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">+</button>
+        </div>
+
+        <div class="row">
+            <button class="col  btn btn-primary" onClick="handleInput(event)">4</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">5</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">6</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">-</button>
         </div>
 
         <div class="row">
             <button class="col  btn btn-primary" onClick="handleInput(event)">7</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">8</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">9</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">*</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">8</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">9</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">*</button>
         </div>
 
         <div class="row">
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">0</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">C</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">/</button>
-            <button  class="col  btn btn-primary" onClick="handleInput(event)">=</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">.</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">0</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">/</button>
+            <button class="col  btn btn-primary" onClick="handleInput(event)">=</button>
+
         </div>
 
-        
+
     </div>
+
+
     <script type="text/javascript" src="script/script.js"></script>
+
     <!-- For production 
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
 -->
     <!-- For Development -->
-    
-    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"/>
-    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"/>
-    
+
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js" />
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js" />
+
 </body>
 
 </html>

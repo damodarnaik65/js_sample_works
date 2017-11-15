@@ -21,3 +21,8 @@ To nstall bootstrap via npm :
         gulp minify-html
     
 
+
+    5.npm install
+    it will installed all packages in js_calci project
+    
+
