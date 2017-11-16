@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var elixir = require('laravel-elixir');
 var cleanCSS =require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var connect = require('gulp-connect');
